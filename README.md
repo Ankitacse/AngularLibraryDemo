@@ -1,7 +1,10 @@
+
 # MagicStrings
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.17.
- # Go to "DetailsAboutProject.html" to know steps
+ 
+ 
+<h4> Go to "DetailsAboutProject.html" file to know steps</h4>
 
 ## Development server
 

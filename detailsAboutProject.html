@@ -1,0 +1,70 @@
+<h3>
+    Steps to Create Your Own Library and <b>NPM PACKAGES</b>
+</h3>
+<div>
+    <p>
+        <b> Step1</b>
+        
+        <span>
+            <p>
+                  note:-  use this command to create a WORK SPACE,
+                    create application = false doesn't create src outside 
+                    project and other project things just create work space,
+                    recommended to use for library
+            </p>
+        </span>
+       
+     <b> ng new magic-strings-exapmple --create-appllication= false.</b>
+    </p>
+    <p>
+        <h4>Step2) create library using this ,add prefix will add prefix while cretaing component </h4>
+       
+        ng generate libarary library-name --prefix=ak
+    </p>
+    <p>
+         <h4>Step 3) run project using ng serve proj name</h4>
+        ng serve proj-name
+        or 
+        ng serve --open
+    </p>
+    <p>
+        <b></b>
+        <h4> Step4) it will create ur library in dist folder</h4>
+      
+        ng build library-name
+    </p>
+</div>
+<div>
+<h3>To use library in project</h3>
+<p>
+  <b>Step1</b>  
+     Go to app module add library exapmle in this project u found
+    magicStringModule
+</p>
+<p>
+    <b>Step1</b>
+    use selector to use this library for example
+    <!-- <ak-magic-string></ak-magic-string> -->
+</p>
+<p>
+    note :- each time we make any change in library we have to use<b> "ng build library-name"</b>
+    for convinent in this project go to package.json ,u will fing "lib:build" to run same command.
+    now just write <b>"npm run lib:build"</b>
+    and your library build.
+
+    
+</p>
+<p>
+    <h3>To CONVERT IN PACKAGE </h3>
+    <ul>
+        <li>cd dist</li>
+        <li>cd magic-string </li>
+        <li>npm pack</li>
+    </ul>
+    <span>
+        or JUST add "    "lib:package" : "cd dist && cd magic-string && npm pack" "
+        in package.json
+        and write <b>npm run lib:package</b>
+    </span>
+</p>
+</div>
